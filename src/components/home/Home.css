@@ -1,6 +1,7 @@
 .page-section {
   background-color: #f5dfbb;
-  margin-top: 7.5vh;
+  margin-top: -10vh;
+  height: 130vh;
   z-index: -10;
 }
 
@@ -21,7 +22,7 @@
 }
 .info h2 {
   z-index: 2;
-  color: #f45e5e;
+  color: #ed6e6e;
   font-size: 2.5rem;
 }
 
@@ -33,17 +34,29 @@ h1 {
 .triangle {
   width: 0;
   height: 0;
-  border-top: 30vh solid transparent;
-  border-right: 100vw solid #562c2c;
-  border-bottom: 80vw solid transparent;
   position: absolute;
-  right: -7.5%;
   z-index: 1;
-  transform: rotate(10deg);
+  left: 50%;
+  transform: translate(-65%) rotate(10deg);
+  border-top: 32.5rem solid transparent;
+  border-right: 50rem solid #562c2c;
+  border-bottom: 25rem solid transparent;
 }
 
 .main-text-wrapper {
   z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .page-section {
+    height: 100vh;
+    margin-top: 0;
+  }
+}
+@media (max-width: 650px) {
+  .page-section {
+    height: 70vh;
+  }
 }
 
 /*# sourceMappingURL=Home.css.map */

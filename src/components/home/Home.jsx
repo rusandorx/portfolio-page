@@ -8,7 +8,7 @@ export const Home = () => {
         <div className="main-text-wrapper">
           <h1>Rusandor</h1>
         </div>
-        <h2>Фронтенд разработчик</h2>
+        <h2>Фронтенд-разработчик</h2>
         <div className="triangle"></div>
       </div>
     </section>
