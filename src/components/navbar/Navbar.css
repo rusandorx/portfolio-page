@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #333533;
+  font-family: "Reem Kufi Ink", sans-serif;
+  position: fixed;
+  top: 0;
+  height: 7.5vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  flex-direction: row;
+  height: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 1.5rem 0 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-links a {
+  text-decoration: none;
+  font-size: max(1.5rem, 16px);
+  height: 100%;
+}
+
+a {
+  color: #f5cb5c;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #c5930c;
+}
+
+#logo-container {
+  font-size: max(2rem, 20px);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.35rem;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

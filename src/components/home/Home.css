@@ -1,0 +1,49 @@
+.page-section {
+  background-color: #f5dfbb;
+  margin-top: 7.5vh;
+  z-index: -10;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  height: 100%;
+  z-index: -2;
+}
+.info h1 {
+  color: #562c2c;
+  text-shadow: -3px -3px 0 #f5dfbb, 3px -3px 0 #f5dfbb, -3px 3px 0 #f5dfbb, 3px 3px 0 #f5dfbb;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+}
+.info h2 {
+  z-index: 2;
+  color: #f45e5e;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 30vh solid transparent;
+  border-right: 100vw solid #562c2c;
+  border-bottom: 80vw solid transparent;
+  position: absolute;
+  right: -7.5%;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.main-text-wrapper {
+  z-index: 2;
+}
+
+/*# sourceMappingURL=Home.css.map */
