@@ -21,12 +21,14 @@ $background-color: #f5dfbb;
     z-index: 1;
     text-transform: uppercase;
     letter-spacing: 1.5rem;
+    cursor: default;
   }
 
   h2 {
     z-index: 2;
     color: #ed6e6e;
     font-size: 2.5rem;
+    cursor: default;
   }
 }
 

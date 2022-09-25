@@ -1,0 +1,75 @@
+$background-color: #45567d;
+$project-bg-color: #625e5e;
+$main-colors: ('red': #ff4646, 'blue': #b2d9ff, 'green': #42ed62);
+
+#projects-section {
+  height: 100%;
+  background-color: $background-color;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
+  h2 {
+    font-size: 3rem;
+    border-bottom: 0.2rem solid white;
+    max-width: 840px;
+    margin: 0 auto 4rem auto;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 75%;
+    grid-gap: 2.5rem;
+    margin: 0 auto;
+  }
+
+  a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  .project {
+    background: $project-bg-color;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+  }
+
+  .image-project {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+  .project:hover {
+    .red {
+      .decoration {
+        color: map-get($main-colors, 'red')
+      }
+    }
+
+    .green {
+      .decoration {
+        color: map-get($main-colors, 'green')
+      }    }
+
+    .blue {
+      .decoration {
+        color: map-get($main-colors, 'blue')
+      }    }
+  }
+
+  .decoration {
+    transition: color 0.15s ease-out;
+    color: $project-bg-color;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #projects-section {
+    .project-title {
+      font-size: 3rem;
+    }
+  }
+}

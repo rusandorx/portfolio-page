@@ -16,6 +16,7 @@ code {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -25,8 +26,9 @@ html {
   }
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   html {
     font-size: 0.5rem;
   }
 }
+
