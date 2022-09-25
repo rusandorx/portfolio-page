@@ -108,7 +108,6 @@
   }
   100% {
     transform: translate(0, 0);
-    opacity: inherit;
   }
 }
 .bio {
@@ -139,7 +138,11 @@
   .bubbles #sass-bubble {
     display: none;
   }
-  @keyframes animation-trigger {}
+  @keyframes animation-trigger {
+    0% {
+      display: initial;
+    }
+  }
   @keyframes bubbles-animation {
     0% {
       opacity: 0;
