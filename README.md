@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+## Сайт Палкина Руслана для отборочного этапа Интенсивов Академии Яндекса по фронтенду
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Структура сайта
 
-## Available Scripts
+Сайт состоит из четырех основных секций: главная секция,
+секция с ссылками на профили и кратким описанием моих стремлений, секция с примерами некоторых моих проектов
+и header сверху для быстрого перемещения по странице. Я старался сделать сайт "резиновым"
+с помощью использования относительных единиц измерений, grid-ов и flexbox-ов, а так же @media queries.
 
-In the project directory, you can run:
+### Основные инструменты
 
-### `npm start`
+Для его создания использовалась библиотека [React](https://ru.reactjs.org/),
+чтобы разделить логику некоторых компонентов приложения, а так же чтобы связать эту логику со стилями
+в более удобном виде, чем предлагает чистый js + html + css.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Для создания стилей использовался препроцессор [sass (scss)](https://sass-scss.ru/), так как
+он предлагает некоторые крайне удобные функции, которых нет в обычном css (nested style rules, mixins и т.д.).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+При создании приложения **НЕ** использовались библиотеки со стилями (Tailwind, Chakra UI и т.д.). 
+Все стили делались с нуля.
 
-### `npm test`
+### Дополнительные инструменты:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [FontAwesome](https://fontawesome.com/) - отсюда я брал некоторые иконки, для стилистического оформления страницы.
+* [React-intersection-observer](https://www.npmjs.com/package/react-intersection-observer) - npm пакет под react,
+  который облегчает работу с Intersection Observer API. С его помощью было легко сделать анимацию при появлении
+  определенной секции на экране.
 
-### `npm run build`
+### Как запустить
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Вариант 1: <br>
+Клонировать репозиторий. В репозитории есть папка build. В ней уже собранный сайт, 
+нужно всего лишь открыть index.html страницу в браузере. <br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Вариант 2: <br>
+Клонировать репозиторий и запустить скрипт: <br>
+<code>npm start</code><br>
+(Запустить как обычное react приложение, чем этот репозиторий и является)
