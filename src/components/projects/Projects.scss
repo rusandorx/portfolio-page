@@ -1,4 +1,4 @@
-$background-color: #45567d;
+$background-color: #475a84;
 $project-bg-color: #625e5e;
 $main-colors: ('red': #ff4646, 'blue': #b2d9ff, 'green': #42ed62);
 
@@ -12,13 +12,13 @@ $main-colors: ('red': #ff4646, 'blue': #b2d9ff, 'green': #42ed62);
   h2 {
     font-size: 3rem;
     border-bottom: 0.2rem solid white;
-    max-width: 840px;
+    max-width: 65%;
     margin: 0 auto 4rem auto;
   }
 
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     width: 75%;
     grid-gap: 2.5rem;
     margin: 0 auto;
@@ -32,7 +32,7 @@ $main-colors: ('red': #ff4646, 'blue': #b2d9ff, 'green': #42ed62);
 
   .project {
     background: $project-bg-color;
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
     border-radius: 2px;
   }
 
@@ -70,6 +70,18 @@ $main-colors: ('red': #ff4646, 'blue': #b2d9ff, 'green': #42ed62);
   #projects-section {
     .project-title {
       font-size: 3rem;
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #projects-section {
+    h2 {
+      max-width: 80%;
     }
   }
 }

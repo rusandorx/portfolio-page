@@ -2,6 +2,7 @@
   position: relative;
   height: 100vh;
   max-height: 100vh;
+  min-height: 70%;
   overflow: hidden;
   background-color: #19191e;
   z-index: 2;
@@ -114,7 +115,7 @@
 }
 @media only screen and (max-width: 900px) {
   #skills-section .profile-links {
-    margin-top: 5rem;
+    margin-top: 0.5rem;
     flex-direction: column;
   }
   #skills-section .bio {
@@ -136,6 +137,9 @@
   }
 }
 @media only screen and (max-width: 650px) {
+  #skills-section {
+    height: 75vh;
+  }
   #skills-section .bubbles {
     position: absolute;
     top: 50%;
@@ -144,6 +148,9 @@
   }
   #skills-section .bio h2 {
     font-size: 7rem;
+  }
+  #skills-section .profile-links {
+    margin-top: 5rem;
   }
   #skills-section #node-js-bubble, #skills-section #bubble1, #skills-section #bubble2, #skills-section #sass-bubble {
     display: none;
@@ -158,6 +165,16 @@
   }
   #skills-section #react-bubble .fa-react {
     font-size: 36rem;
+  }
+}
+@media only screen and (max-width: 650px) and (max-width: 650px) and (max-height: 750px) {
+  #skills-section .profile-links {
+    margin-top: 0;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+  #skills-section .profile-links a i {
+    font-size: 2.5rem !important;
   }
 }
 
