@@ -66,9 +66,11 @@
   font-size: 32px;
   letter-spacing: 1.5px;
 }
+
 .bubbles {
   position: absolute;
   height: 100%;
+  transition: visibility 5s linear;
 }
 
 .container {
@@ -79,13 +81,43 @@
   padding: 5px;
 }
 
+.animation-trigger {
+  animation-duration: 1.5s;
+  animation-name: animation-trigger;
+}
+
+@keyframes animation-trigger {
+  0% {
+    transform: translate(0, 10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.bubbles-animation {
+  animation-duration: 1.5s;
+  animation-name: bubbles-animation;
+}
+
+@keyframes bubbles-animation {
+  0% {
+    transform: translate(0, 10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: inherit;
+  }
+}
 .bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-right: 2.5rem;
-  width: 50%;
+  width: calc(50vw - 1rem);
   position: absolute;
 }
 .bio h2 {
@@ -102,10 +134,16 @@
     width: 75%;
   }
   .bubbles {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   .bubbles #sass-bubble {
     display: none;
+  }
+  @keyframes animation-trigger {}
+  @keyframes bubbles-animation {
+    0% {
+      opacity: 0;
+    }
   }
 }
 @media only screen and (max-width: 1200px) {

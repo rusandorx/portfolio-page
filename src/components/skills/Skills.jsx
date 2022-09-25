@@ -1,10 +1,13 @@
 import './Skills.css'
-import icon from '../../icons/codewars.svg'
+import { useEffect, useRef, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 export const Skills = () => {
+  const { ref, inView, entry } = useInView()
+
   return (
-    <section id="skills-section">
-      <div className="bubbles">
+    <section id="skills-section" ref={ref}>
+      <div className={'bubbles' + (inView ? ' bubbles-animation' : '')}>
           <span className="fa-stack fa-2x"
                 id="react-bubble">
             <i className="fa-solid fa-circle fa-stack-2x"/>
@@ -29,7 +32,7 @@ export const Skills = () => {
             <i className="fa-brands fa-sass fa-stack-1x fa-inverse"/>
           </span>
       </div>
-      <div className="container">
+      <div className={'container' + (inView ? ' animation-trigger' : '')}>
         <div className="bio">
           <h2>Приветствую &#128075;</h2>
           <p>Меня зовут Палкин Руслан, мне 16 лет и я интересуюсь фронтенд
@@ -42,11 +45,14 @@ export const Skills = () => {
                 <i className="fa-brands fa-github"> Github</i>
               </a>
             </div>
-            <div className="link"><a href="https://t.me/rusandor">
-              <i className="fa-brands fa-telegram"> Telegram</i>
-            </a></div>
             <div className="link">
-              <a href="mailto:ruslanpalkin44@gmail.com">
+              <a href="https://t.me/rusandor"
+                 target="_blank">
+                <i className="fa-brands fa-telegram"> Telegram</i>
+              </a>
+            </div>
+            <div className="link">
+              <a href="mailto:ruslanpalkin44@gmail.com" target="_blank">
                 <i className="fa-solid fa-at"> Email</i>
               </a></div>
           </div>
